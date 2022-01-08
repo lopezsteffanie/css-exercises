@@ -24,6 +24,11 @@ button {
 }
 
 ul {
+  /*new added code - starting display of menu is none*/
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.25s ease-out;
+  /*end new added code*/
   position: absolute;
   left: -25%;
   background-color: rgb(189, 188, 188);
@@ -34,4 +39,20 @@ ul {
 
 li {
   padding: 16px;
+}
+
+/*dropdown menu*/
+button:hover{
+  cursor: pointer;
+  background-color: rgb(25, 221, 247));
+}
+
+.dropdown-menu:hover ul {
+  max-height: 500px;
+  transition: max-height 0.5s ease-out;
+}
+
+ul li:hover {
+  cursor: pointer;
+  background-color: rgb(219, 215, 215);
 }
